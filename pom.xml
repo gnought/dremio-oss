@@ -1193,7 +1193,7 @@ limitations under the License.
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.2.0</version>
+          <version>4.5.0.0</version>
         </plugin>
 
         <!--This plugin's configuration is used to store Eclipse m2e settings

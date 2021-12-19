@@ -88,6 +88,7 @@
         <configuration>
           <effort>MAX</effort>
           <xmlOutput>true</xmlOutput>
+          <excludeFilterFile>src/main/spotbugs/excludes.xml</excludeFilterFile>
         </configuration>
         <executions>
           <execution>

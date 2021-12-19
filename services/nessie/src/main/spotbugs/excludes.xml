@@ -18,27 +18,27 @@
 -->
 <FindBugsFilter>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="UCF_USELESS_CONTROL_FLOW"/>
   </Match>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="EI_EXPOSE_REP"/>
   </Match>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="EI_EXPOSE_REP2"/>
   </Match>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="EI_EXPOSE_REP20"/>
   </Match>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="MS_EXPOSE_REP"/>
   </Match>
   <Match>
-    <Package name="~com.dremio.service.nessieapi"/>
+    <Package name="~com.dremio.service.nessie"/>
     <Bug pattern="SF_SWITCH_NO_DEFAULT"/>
 </Match>
 </FindBugsFilter>

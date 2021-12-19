@@ -21,4 +21,45 @@
     <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket$Builder"/>
     <Bug pattern="UCF_USELESS_CONTROL_FLOW"/>
   </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket$Builder"/>
+    <Bug pattern="DEFAULT_INSTANCE"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket$Builder"/>
+    <Bug pattern="EI_EXPOSE_REP"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket$Builder"/>
+    <Bug pattern="EI_EXPOSE_REP2"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket$Builder"/>
+    <Bug pattern="MS_EXPOSE_REP"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket"/>
+    <Bug pattern="DEFAULT_INSTANCE"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket"/>
+    <Bug pattern="EI_EXPOSE_REP"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent$PreparedStatementTicket"/>
+    <Bug pattern="MS_EXPOSE_REP"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.TicketContent"/>
+    <Method name="getDescriptor" />
+    <Bug pattern="MS_EXPOSE_REP"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.DremioFlightProducer"/>
+    <Bug pattern="EI_EXPOSE_REP2"/>
+  </Match>
+  <Match>
+    <Class name="com.dremio.service.flight.protector.CancellableUserResponseHandler"/>
+    <Bug pattern="EI_EXPOSE_REP2"/>
+  </Match>
 </FindBugsFilter>
