@@ -152,7 +152,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.14.3",
     "express": "^4.15.4",
-    "file-loader": "^4.1.0",
+    "file-loader": "^6.2.0",
     "glob": "^7.1.2",
     "glob-loader": "^0.3.0",
     "html-webpack-plugin": "^3.2.0",
