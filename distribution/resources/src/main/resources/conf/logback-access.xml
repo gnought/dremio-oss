@@ -23,12 +23,10 @@
     <then>
       <appender name="access-text" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${dremio.log.path}/access.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
           <fileNamePattern>${dremio.log.path}/archive/access.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
           <maxHistory>30</maxHistory>
-          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-            <maxFileSize>100MB</maxFileSize>
-          </timeBasedFileNamingAndTriggeringPolicy>
+          <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
 
         <encoder>

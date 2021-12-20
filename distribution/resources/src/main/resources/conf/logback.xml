@@ -29,12 +29,10 @@
     <then>
       <appender name="text" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${dremio.log.path}/server.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
           <fileNamePattern>${dremio.log.path}/archive/server.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
           <maxHistory>30</maxHistory>
-          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-            <maxFileSize>100MB</maxFileSize>
-          </timeBasedFileNamingAndTriggeringPolicy>
+          <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
 
         <encoder>
@@ -56,12 +54,10 @@
 
       <appender name="json" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${dremio.log.path}/json/server.json</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
           <fileNamePattern>${dremio.log.path}/json/archive/server.%d{yyyy-MM-dd}.%i.json.gz</fileNamePattern>
           <maxHistory>30</maxHistory>
-          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-            <maxFileSize>100MB</maxFileSize>
-          </timeBasedFileNamingAndTriggeringPolicy>
+          <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
 
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
@@ -80,12 +76,10 @@
 
       <appender name="query" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${dremio.log.path}/queries.json</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
           <fileNamePattern>${dremio.log.path}/archive/queries.%d{yyyy-MM-dd}.%i.json.gz</fileNamePattern>
           <maxHistory>30</maxHistory>
-          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-            <maxFileSize>100MB</maxFileSize>
-          </timeBasedFileNamingAndTriggeringPolicy>
+          <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
 
         <encoder>
@@ -95,12 +89,9 @@
 
       <appender name="tracker" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${dremio.log.path}/tracker.json</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
           <fileNamePattern>${dremio.log.path}/archive/tracker.%d{yyyy-MM-dd}.%i.json.gz</fileNamePattern>
-          <maxHistory>30</maxHistory>
-          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-              <maxFileSize>100MB</maxFileSize>
-          </timeBasedFileNamingAndTriggeringPolicy>
+          <maxHistory>30</maxHistory>SizeAndTimeBasedRollingPolicy          <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
 
         <encoder>
@@ -158,12 +149,10 @@
         <additivity value ="false"/>
         <appender name="text" class="ch.qos.logback.core.rolling.RollingFileAppender">
           <file>${dremio.log.path}/hive.deprecated.function.warning.log</file>
-          <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+          <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>${dremio.log.path}/archive/hive.deprecated.function.warning.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
             <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-              <maxFileSize>100MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxFileSize>100MB</maxFileSize>
           </rollingPolicy>
 
           <encoder>
