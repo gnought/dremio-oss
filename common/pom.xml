@@ -34,7 +34,7 @@
     <flatc.download.skip>false</flatc.download.skip>
     <flatc.executable>${project.build.directory}/flatc-${os.detected.classifier}-${fbs.version}.exe</flatc.executable>
     <flatc.generated.files>${project.build.directory}/generated-sources/flatc</flatc.generated.files>
-    <os-maven-plugin.version>1.5.0.Final</os-maven-plugin.version>
+    <os-maven-plugin.version>1.7.0</os-maven-plugin.version>
   </properties>
 
   <build>
@@ -73,7 +73,7 @@
       <plugin>
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
-        <version>3.0</version>
+        <version>4.1</version>
         <configuration>
           <validHeaders>
             <validHeader>src/main/licenses/io.protostuff.JsonIOUtils.license.txt</validHeader>
@@ -191,7 +191,7 @@
       <groupId>org.immutables</groupId>
       <artifactId>value</artifactId>
       <scope>provided</scope>
-    </dependency>    
+    </dependency>
 
     <dependency>
       <groupId>io.protostuff</groupId>

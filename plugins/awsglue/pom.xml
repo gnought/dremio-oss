@@ -148,8 +148,8 @@
             </goals>
             <phase>process-resources</phase>
             <configuration>
-              <!-- avoid using system range for ephemeral ports as servers are not 
-                immediately started, and pre-allocated ports might have been reused by OS 
+              <!-- avoid using system range for ephemeral ports as servers are not
+                immediately started, and pre-allocated ports might have been reused by OS
                 Some tests also use fixed port in the 20000 range -->
               <!-- Always use non-overlapping ranges in each pom to avoid port conflict -->
               <minPortNumber>16000</minPortNumber>
@@ -164,7 +164,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <id>copy</id>
@@ -192,7 +192,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M3</version>
+        <version>3.0.0-M5</version>
         <configuration>
           <argLine>
             -Xms512M
@@ -237,7 +237,7 @@
         <!-- use as plugin instead of extension to resolve issues in Eclipse. See https://github.com/xolstice/protobuf-maven-plugin/issues/10#issuecomment-419529938 for more detail -->
         <groupId>kr.motd.maven</groupId>
         <artifactId>os-maven-plugin</artifactId>
-        <version>1.6.2</version>
+        <version>1.7.0</version>
         <executions>
           <execution>
             <phase>initialize</phase>
@@ -246,7 +246,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>                  
+      </plugin>
     </plugins>
   </build>
 
