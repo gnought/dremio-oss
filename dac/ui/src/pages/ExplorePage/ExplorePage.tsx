@@ -114,7 +114,6 @@ export class ExplorePageView extends PureComponent<ExplorePageViewProps, Explore
           sqlState={this.props.sqlState}
           isError={this.state.isError}
           errorData={this.state.errorData}
-          updateSqlPartSize={this.props.updateSqlPartSize}
           toggleRightTree={this.props.toggleRightTree}
         />
         <HistoryLineController
