@@ -29,12 +29,12 @@ import ExplorePageContentWrapper from './subpages/ExplorePageContentWrapper';
 const EXPLORE_PAGE_MIN_HEIGHT = 700;
 
 type ExplorePageViewProps = {
-  pageType?: PageTypes,
+  pageType: PageTypes,
   dataset?: any,
   location: any,
   rightTreeVisible: boolean,
-  sqlState?: boolean,
-  sqlSize?: number,
+  sqlState: boolean,
+  sqlSize: number,
   updateSqlPartSize: (newSize: number) => void,
   toggleRightTree: () => void,
   isResizeInProgress?: boolean,
