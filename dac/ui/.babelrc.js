@@ -32,6 +32,8 @@ module.exports = {
     // see https://babeljs.io/docs/en/babel-plugin-proposal-decorators#note-compatibility-with-babel-plugin-proposal-class-properties
     ['@babel/plugin-proposal-decorators', { 'legacy': true }],
     ['@babel/plugin-proposal-class-properties', { 'loose' : true }],
+    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+    ["@babel/plugin-proposal-private-methods", { "loose": true }],
     '@babel/plugin-transform-runtime',
     '@babel/plugin-transform-modules-commonjs'
   ],
