@@ -85,7 +85,7 @@
     "react-gtm-module": "^2.0.11",
     "react-immutable-proptypes": "^2.1.0",
     "react-intl": "^5.16.0",
-    "react-json-tree": "git+https://github.com/dremio/react-json-tree.git",
+    "react-json-tree": "^0.15.1",
     "react-modal": "^3.8.1",
     "react-monaco-editor": "^0.39.1",
     "react-motion": "^0.5.1",
